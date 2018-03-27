@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset-"utf-8">
+                <title>v-if</title>
+                <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>        
+        </head>
+        <body>
+            <div id="count">
+                예금액 : <input type="text" v-model="amount" />
+            
+            <img v-if="amount > 100 " src="images/error.png"  title="마이너스안됨" style="width:15px;height:15px;
+            vertical-align:middle"/>
+        </div>
+            <script type="text/javascript">
+        
+                let simple  = new Vue({
+                    el:'#count',
+                    data:{amount  : 200}
+                });
+            </script>
+        </body>
+</html>
