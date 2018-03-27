@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset-"utf-8">
+            <title>v-if2</title>
+            <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>
+    </head>
+    <body>
+        <div id="simple">
+            통장금액 : <input type="text" v-model="count" />
+            <span v-if="count >=1 && count<=10" >상거지</span>
+            <span v-else-if="count >=11 &&count<=20" >하급거지</span>
+        </div>
+        <script type="text/javascript">
+
+            let simpe = new Vue({
+                el : "#simple",
+                data : {
+                    count : 0
+                }
+            });
+        </script>
+    </body>
+</html>
