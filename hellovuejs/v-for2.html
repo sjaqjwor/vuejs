@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset-"utf-8">
+                <title>v-if</title>
+                <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>        
+        </head>
+        <body>
+            <div id = "example">
+            <select id="regions">
+                <option disabled="disabled" selected>선택하세요</option>
+                <option v-for='(val,key) in regions' v-bind:value="key">{{val}}</option> 
+            </select>
+        </div>
+        </template>
+        
+        <script type = "text/javascript">
+            let regions = {
+                "A":"ASIA",
+                "B":"AMERICA",
+                "C":"EUROPE",
+                "D":"AFRICA"
+            };
+        
+             let list =  new Vue({
+                 el : "#example",
+                 data : {
+                     regions : regions
+                 }
+             })
+            
+        </script>
+        </body>
+</html>
