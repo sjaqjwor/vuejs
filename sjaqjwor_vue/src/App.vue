@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/v-for3'
+import HelloWorld from './components/world'
 
 export default {
   name: 'App',
