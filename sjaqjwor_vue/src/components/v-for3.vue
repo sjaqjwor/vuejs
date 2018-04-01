@@ -3,7 +3,9 @@
         
             <select id="regions">
                 <option disabled="disabled" selected>선택하세요</option>
-                <option v-for='(region , index) in regions' v-bind:value="region.key">{{index+1+" "+region.var}}</option> 
+                <option v-for='(region , index) in regions' v-bind:value="region.key">{{index+1+" "+oolo
+                    
+                    region.var}}</option> 
         </select>
     </div>
 </template>

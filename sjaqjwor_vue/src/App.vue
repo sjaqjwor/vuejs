@@ -6,7 +6,8 @@
 </template>
 
 <script>
-import HelloWorld from './components/world'
+import HelloWorld from './components/fetchexample'
+
 
 export default {
   name: 'App',
@@ -15,6 +16,7 @@ export default {
   }
 }
 </script>
+
 
 <style>
 #app {
