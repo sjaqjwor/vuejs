@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/fetchexample'
+import HelloWorld from './components/imageExampe'
 
 
 export default {

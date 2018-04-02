@@ -25,7 +25,6 @@
 </template> 
 <script type ="text/javascript">
 export default{
-    
         name: "fetchexampe",
         data (){
             return{
@@ -44,7 +43,7 @@ export default{
             }
         },
         methods:{
-            fetchContacts:_.debounce(function(){
+            fetchContacts:$_.debounce(function(){
                 this.contacts=[];
                 this.isProcessing=true;
                 let url = "http://sample.bmaster.kro.kr/contacts_long/search/"+this.name;
