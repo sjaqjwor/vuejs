@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset-"utf-8">
+        <title>v-text</title>
+        <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>
+        <style>
+            .boxstyle{background-color : orange;}
+            .center{width:200px; height:100px; line-height:100px;text-align: center;border: 1px solid gray;}
+            </style>            
+    </head>
+        <body>
+            <div id="example">
+                <cent v-bind:class="boxstyle"></cent>
+            </div>
+            <script type="text/javascript">
+                Vue.component('cent',{
+                    template:'<div class="center">중앙에 위치</div>'
+                })
+                var vm = new Vue({
+                    e1 : "#example",
+                    data:{
+                        boxstyle:{
+                            boxcolor:true
+                        }
+                    }
+                })
+            </script>
+            </body>
+</html>

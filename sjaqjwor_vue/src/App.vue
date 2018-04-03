@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/imageExampe'
+import HelloWorld from './components/vue-comp'
 
 
 export default {
