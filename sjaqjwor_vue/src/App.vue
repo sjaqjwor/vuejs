@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <chap5Example></chap5Example>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/vue-comp'
-
-
+import chap5Example from './components/chap5Example'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    chap5Example
   }
 }
 </script>
