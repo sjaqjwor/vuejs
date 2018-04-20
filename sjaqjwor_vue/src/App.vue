@@ -1,15 +1,19 @@
 <template>
-  <div id="app">
-    <chap5Example></chap5Example>
-  </div>
+<div>
+  <eventbuschild ></eventbuschild>
+  <eventbuschild2 ></eventbuschild2>
+</div>
+  
 </template>
 
 <script>
-import chap5Example from './components/chap5Example'
+import eventbuschild from './components/chap6/eventbuschild'
+import eventbuschild2 from './components/chap6/eventbuschild2'
+import {eventBus} from './main.js'
 export default {
   name: 'App',
   components: {
-    chap5Example
+    eventbuschild,eventbuschild2
   }
 }
 </script>

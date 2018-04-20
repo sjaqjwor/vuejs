@@ -6,6 +6,7 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import underscore from 'vue-underscore';
 Vue.config.productionTip = false
+export const eventBus = new Vue();
 
 /* eslint-disable no-new */
 new Vue({

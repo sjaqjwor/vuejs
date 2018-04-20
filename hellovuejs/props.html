@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset-"utf-8">
+        <title>hello world</title>
+        <script src="https://unpkg.com/vue/dist/vue.min.js" ></script>
+    </head>
+    <template id="list">
+            <li>{{message}}</li>
+        </template>
+        <script type="text/javascript">
+        Vue.component('l-c',{
+            template:'#list',
+            props:['message']
+        })
+        </script>
+        <body>
+           <div id ="app">
+                <ul l-c message="tls"></ul>
+                <ul l-c message="tl"></ul>
+                <ul l-c message="t"></ul>
+           </div>
+            </body>
+            <script type="text/javascript">
+                var vm = new Vue({
+                    el:"#app"
+                })
+            </script>
+</html>
