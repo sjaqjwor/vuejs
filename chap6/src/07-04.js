@@ -4,4 +4,4 @@ function foodReport(name,age, ...f){
 }
 
 foodReport("이",20,"ㅁㅁㅁ","ㄴㄴㄴ");
-foodReport("이",20,"ㅁㅁㅁ")
+foodReport("이",20,"ㅁㅁㅁ")07

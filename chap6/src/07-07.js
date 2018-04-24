@@ -1,7 +1,8 @@
 function Person(name, yearCount) {
     this.name = name;
     this.age = 0;
-    var incrAge = ()=>{
+   
+    incrAge=()=>{
         this.age++;
     }
     for (var i=1; i <= yearCount; i++) {
